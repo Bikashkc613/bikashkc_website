@@ -1,0 +1,167 @@
+<!-- ===================================
+     RESUME DOWNLOAD SECTION - 4 CARDS
+     Copy this to replace the resume section in index.html
+     ================================== -->
+
+<section class="resume-section section" id="resume">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">Documents</span>
+            <h2 class="section-title">Resume & CV</h2>
+            <div class="section-line"></div>
+            <p class="section-subtitle">Download my professional documents and templates</p>
+        </div>
+        
+        <div class="resume-grid-4">
+            <!-- CV Download Card -->
+            <div class="resume-card glass hover-lift" data-aos="fade-up" data-aos-delay="100">
+                <div class="resume-icon">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+                <h3>Download CV</h3>
+                <p>Comprehensive curriculum vitae with complete work history</p>
+                <div class="download-info">
+                    <span><i class="fas fa-file"></i> PDF Format</span>
+                    <span><i class="fas fa-weight"></i> ~500KB</span>
+                </div>
+                <a href="assets/CV.pdf" download class="btn btn-primary btn-ripple">
+                    <i class="fas fa-download"></i>
+                    <span>Download CV</span>
+                </a>
+            </div>
+            
+            <!-- Resume Download Card -->
+            <div class="resume-card glass hover-lift" data-aos="fade-up" data-aos-delay="200">
+                <div class="resume-icon" style="background: linear-gradient(135deg, #6C63FF 0%, #00E5FF 100%);">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <h3>Download Resume</h3>
+                <p>Professional resume document with key achievements</p>
+                <div class="download-info">
+                    <span><i class="fas fa-file"></i> PDF Format</span>
+                    <span><i class="fas fa-weight"></i> ~400KB</span>
+                </div>
+                <a href="assets/Resume.pdf" download class="btn btn-primary btn-ripple">
+                    <i class="fas fa-download"></i>
+                    <span>Download Resume</span>
+                </a>
+            </div>
+            
+            <!-- Resume Template Card -->
+            <div class="resume-card glass hover-lift" data-aos="fade-up" data-aos-delay="300">
+                <div class="resume-icon" style="background: linear-gradient(135deg, #14F195 0%, #6C63FF 100%);">
+                    <i class="fas fa-file-word"></i>
+                </div>
+                <h3>Resume Template</h3>
+                <p>Editable resume template - customize for your needs</p>
+                <div class="download-info">
+                    <span><i class="fas fa-file"></i> DOCX Format</span>
+                    <span><i class="fas fa-edit"></i> Editable</span>
+                </div>
+                <a href="assets/Resume_Template.docx" download class="btn btn-primary btn-ripple">
+                    <i class="fas fa-download"></i>
+                    <span>Download Template</span>
+                </a>
+            </div>
+            
+            <!-- CV Template Card -->
+            <div class="resume-card glass hover-lift" data-aos="fade-up" data-aos-delay="400">
+                <div class="resume-icon" style="background: linear-gradient(135deg, #00E5FF 0%, #14F195 100%);">
+                    <i class="fas fa-file-word"></i>
+                </div>
+                <h3>CV Template</h3>
+                <p>Editable CV template - professional format included</p>
+                <div class="download-info">
+                    <span><i class="fas fa-file"></i> DOCX Format</span>
+                    <span><i class="fas fa-edit"></i> Editable</span>
+                </div>
+                <a href="assets/CV_Template.docx" download class="btn btn-primary btn-ripple">
+                    <i class="fas fa-download"></i>
+                    <span>Download Template</span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Optional: Additional Info -->
+        <div class="resume-note" data-aos="fade-up" data-aos-delay="500">
+            <p><i class="fas fa-info-circle"></i> All documents are professionally formatted and ready to use. Templates are fully editable.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===================================
+     ADDITIONAL CSS FOR 4-CARD LAYOUT
+     Add this to css/style.css
+     ================================== -->
+
+<style>
+/* Resume Grid - 4 Cards */
+.resume-grid-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    max-width: 1400px;
+    margin: 0 auto var(--spacing-xl);
+}
+
+/* Download Info */
+.download-info {
+    display: flex;
+    justify-content: space-around;
+    padding: var(--spacing-md) 0;
+    margin: var(--spacing-md) 0;
+    border-top: 1px solid var(--glass-border);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.download-info span {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.download-info i {
+    color: var(--accent-primary);
+}
+
+/* Resume Note */
+.resume-note {
+    text-align: center;
+    padding: var(--spacing-lg);
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-md);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.resume-note p {
+    color: var(--text-secondary);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+}
+
+.resume-note i {
+    color: var(--accent-primary);
+    font-size: 1.25rem;
+}
+
+/* Responsive for Resume Grid */
+@media (max-width: 768px) {
+    .resume-grid-4 {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    .download-info {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        align-items: center;
+    }
+}
+</style>

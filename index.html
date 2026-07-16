@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bikash KC - Computer Engineer, Full Stack Developer, Blockchain Developer, AI Enthusiast & Computer Hardware Trainer">
+    <meta name="keywords" content="Bikash KC, Computer Engineer, Full Stack Developer, Blockchain, AI, Web Development">
+    <meta name="author" content="Bikash KC">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Bikash KC - Portfolio">
+    <meta property="og:description" content="Computer Engineer | Full Stack Developer | Blockchain Developer">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/profile.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bikash KC - Portfolio">
+    <meta name="twitter:description" content="Computer Engineer | Full Stack Developer | Blockchain Developer">
+    
+    <title>Bikash KC - Portfolio | Computer Engineer & Full Stack Developer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+            <div class="spinner"></div>
+            <p class="loading-text">Loading Portfolio<span class="dots"></span></p>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Background Particles -->
+    <canvas id="particles-canvas" class="particles-bg"></canvas>
+
+    <!-- Floating Background Shapes -->
+    <div id="floating-shapes" class="floating-shapes-container"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="#home">
+                    <span class="logo-text">Bikash<span class="gradient-text">KC</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#certificates" class="nav-link">Certificates</a>
+                <a href="#resume" class="nav-link">Resume</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileToggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section section" id="home">
+        <div class="container hero-container">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <div class="hero-greeting">
+                    <span class="wave">👋</span>
+                    <span class="greeting-text">Hello, I'm</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="name-text gradient-text">Bikash KC</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span class="typing-prefix">I'm a </span>
+                    <span class="typing-text gradient-text" 
+                          data-texts="Computer Engineer|Full Stack Developer|Blockchain Developer|Computer Hardware & Network Trainer|AI Enthusiast"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Passionate about creating innovative solutions through code, blockchain technology, 
+                    and artificial intelligence. Transforming ideas into reality with cutting-edge technologies.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary btn-ripple btn-magnetic">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Hire Me</span>
+                    </a>
+                    <a href="assets/CV.pdf" download class="btn btn-secondary btn-ripple btn-magnetic">
+                        <i class="fas fa-download"></i>
+                        <span>Download CV</span>
+                    </a>
+                    <a href="assets/Resume.pdf" download class="btn btn-secondary btn-ripple btn-magnetic">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Resume</span>
+                    </a>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://github.com/Bikashkc613" target="_blank" class="social-icon hover-glow" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/bikash-kc-567a742a0/" target="_blank" class="social-icon hover-glow" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.facebook.com/bikash.kc.453310/" target="_blank" class="social-icon hover-glow" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-icon hover-glow" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="social-icon hover-glow" data-aos="fade-up" data-aos-delay="500">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:kcbikash200030004000@gmail.com" class="social-icon hover-glow" data-aos="fade-up" data-aos-delay="600">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
+                <div class="image-container">
+                    <div class="glow-effect"></div>
+                    <img src="images/WhatsApp Image 2026-02-26 at 1.32.13 PM.jpeg" alt="Bikash KC" class="profile-img">
+                    <div class="floating-icons">
+                        <i class="fab fa-react floating-icon" style="--delay: 0s"></i>
+                        <i class="fab fa-node-js floating-icon" style="--delay: 1s"></i>
+                        <i class="fab fa-python floating-icon" style="--delay: 2s"></i>
+                        <i class="fab fa-ethereum floating-icon" style="--delay: 3s"></i>
+                        <i class="fas fa-brain floating-icon" style="--delay: 4s"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="800">
+            <div class="mouse"></div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section section" id="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Get To Know</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-image" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="about-img-container tilt-card">
+                        <img src="images/WhatsApp Image 2026-02-26 at 1.32.13 PM.jpeg" alt="Bikash KC">
+                        <div class="about-overlay"></div>
+                    </div>
+                </div>
+                
+                <div class="about-content" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="about-card glass">
+                        <h3>Bikash KC</h3>
+                        <p class="about-role gradient-text">Computer Engineer & Full Stack Developer</p>
+                        <p class="about-bio">
+                            I am a passionate Full Stack Developer with strong knowledge of both front-end and 
+                            back-end technologies, skilled in building responsive, user-friendly, and dynamic web applications. 
+                            I have hands-on experience working with HTML, CSS, JavaScript, PHP, MySQL, and Java, and I enjoy 
+                            developing complete web solutions—from designing clean and attractive interfaces to implementing 
+                            secure backend logic and database management.
+                        </p>
+                        <p class="about-bio">
+                            As a continuous learner, I am always exploring new technologies like Blockchain and AI, 
+                            improving my problem-solving skills to create scalable, efficient, and high-quality applications 
+                            that deliver real-world impact. Additionally, I'm passionate about teaching and training 
+                            others in Computer Hardware & Networking.
+                        </p>
+                        
+                        <div class="about-details">
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Sandhikharka-9, Arghakhanchi</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Diploma in Computer Engineering</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-briefcase"></i>
+                                <span>5+ Years Experience</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-language"></i>
+                                <span>Nepali, English, Hindi</span>
+                            </div>
+                        </div>
+                        
+                        <div class="interests">
+                            <h4>Interests</h4>
+                            <div class="interest-tags">
+                                <span class="tag">Web Development</span>
+                                <span class="tag">Blockchain</span>
+                                <span class="tag">AI & ML</span>
+                                <span class="tag">Networking</span>
+                                <span class="tag">Teaching</span>
+                                <span class="tag">Open Source</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="stats-grid" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stat-card glass">
+                            <i class="fas fa-project-diagram"></i>
+                            <h4 class="counter" data-count="50">0</h4>
+                            <p>Projects</p>
+                        </div>
+                        <div class="stat-card glass">
+                            <i class="fas fa-calendar-alt"></i>
+                            <h4 class="counter" data-count="5">0</h4>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-card glass">
+                            <i class="fas fa-users"></i>
+                            <h4 class="counter" data-count="100">0</h4>
+                            <p>Students Trained</p>
+                        </div>
+                        <div class="stat-card glass">
+                            <i class="fas fa-certificate"></i>
+                            <h4 class="counter" data-count="20">0</h4>
+                            <p>Certificates</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section section" id="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">What I Know</span>
+                <h2 class="section-title">My Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="skills-categories">
+                <!-- Frontend -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Frontend Development
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-card glass hover-lift">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5" style="color: #E34F26"></i>
+                            </div>
+                            <h4>HTML5</h4>
+                            <div class="progress-bar" data-progress="95">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <span class="progress-text">95%</span>
+                        </div>
+                        
+                        <div class="skill-card glass hover-lift">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt" style="color: #1572B6"></i>
+                            </div>
+                            <h4>CSS3</h4>
+                            <div class="progress-bar" data-progress="90">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <span class="progress-text">90%</span>
+                        </div>
+                        
+                        <div class="skill-card glass hover-lift">
+                            <div class="skill-icon">
+                                <i class="fab fa-js" style="color: #F7DF1E"></i>
+                            </div>
+                            <h4>JavaScript</h4>
+                            <div class="progress-bar" data-progress="85">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <span class="progress-text">85%</span>
+                        </div>
+                        
+                        <div class="skill-card glass hover-lift">
+                            <div class="skill-icon">
+                                <i class="fab fa-react" style="color: #61DAFB"></i>
+                            </div>
+                            <h4>React</h4>
+                            <div class="progress-bar" data-progress="80">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <span class="progress-text">80%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Backend -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="category-title">
+                        <i class="fas fa-server"></i>
+                        Backend Development
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-card glass hover-lift">
+                            <div class="skill-icon">
+                                <i class="fab fa-php" style="color: #777BB4"></i>
+                            </div>
+                            <h4>PHP</h4>
+                            <div class="progress-bar" data-progress="85">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <span class="progress-text">85%</span>
+                        </div>
+                        
+                        <div class="skill-card glass hover-lift">
+                            <div class="skill-icon">
+                                <i class="fab fa-node-js" style="color: #339933"></i>
+                            </div>
+                            <h4>Node.js</h4>
+                            <div class="progress-bar" data-progress="75">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <span class="progress-text">75%</span>
+                        </div>
+                        
+                        <div class="skill-card glass hover-lift">
+                            <div class="skill-icon">
+                                <i class="fab fa-python" style="color: #3776AB"></i>
+                            </div>
+                            <h4>Python</h4>
+                            <div class="progress-bar" data-progress="70">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <span class="progress-text">70%</span>
+                        </div>
+                        
+                        <div class="skill-card glass hover-lift">
+                            <div class="skill-icon">
+                                <i class="fab fa-java" style="color: #007396"></i>
+                            </div>
+                            <h4>Java</h4>
+                            <div class="progress-bar" data-progress="75">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <span class="progress-text">75%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Database -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="category-title">
+                        <i class="fas fa-database"></i>
+                        Database
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-card glass hover-lift">
+                            <div class="skill-icon">
+                                <i class="fas fa-database" style="color: #4479A1"></i>
+                            </div>
+                            <h4>MySQL</h4>
+                            <div class="progress-bar" data-progress="85">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <span class="progress-text">85%</span>
+                        </div>
+                        
+                        <div class="skill-card glass hover-lift">
+                            <div class="skill-icon">
+                                <i class="fas fa-leaf" style="color: #47A248"></i>
+                            </div>
+                            <h4>MongoDB</h4>
+                            <div class="progress-bar" data-progress="75">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <span class="progress-text">75%</span>
+                        </div>
+                        
+                        <div class="skill-card glass hover-lift">
+                            <div class="skill-icon">
+                                <i class="fas fa-fire" style="color: #FFCA28"></i>
+                            </div>
+                            <h4>Firebase</h4>
+                            <div class="progress-bar" data-progress="70">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <span class="progress-text">70%</span>
+                        </div>
+                        
+                        <div class="skill-card glass hover-lift">
+                            <div class="skill-icon">
+                                <i class="fas fa-database" style="color: #336791"></i>
+                            </div>
+                            <h4>PostgreSQL</h4>
+                            <div class="progress-bar" data-progress="65">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <span class="progress-text">65%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blockchain & AI -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="category-title">
+                        <i class="fas fa-cube"></i>
+                        Blockchain & AI
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-card glass hover-lift">
+                            <div class="skill-icon">
+                                <i class="fab fa-ethereum" style="color: #3C3C3D"></i>
+                            </div>
+                            <h4>Ethereum</h4>
+                            <div class="progress-bar" data-progress="75">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <span class="progress-text">75%</span>
+                        </div>
+                        
+                        <div class="skill-card glass hover-lift">
+                            <div class="skill-icon">
+                                <i class="fas fa-file-contract" style="color: #00E5FF"></i>
+                            </div>
+                            <h4>Solidity</h4>
+                            <div class="progress-bar" data-progress="70">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <span class="progress-text">70%</span>
+                        </div>
+                        
+                        <div class="skill-card glass hover-lift">
+                            <div class="skill-icon">
+                                <i class="fas fa-brain" style="color: #14F195"></i>
+                            </div>
+                            <h4>Machine Learning</h4>
+                            <div class="progress-bar" data-progress="65">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <span class="progress-text">65%</span>
+                        </div>
+                        
+                        <div class="skill-card glass hover-lift">
+                            <div class="skill-icon">
+                                <i class="fas fa-robot" style="color: #6C63FF"></i>
+                            </div>
+                            <h4>AI Development</h4>
+                            <div class="progress-bar" data-progress="60">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <span class="progress-text">60%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tools & Others -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="500">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools"></i>
+                        Tools & Others
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-card glass hover-lift">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt" style="color: #F05032"></i>
+                            </div>
+                            <h4>Git & GitHub</h4>
+                            <div class="progress-bar" data-progress="90">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <span class="progress-text">90%</span>
+                        </div>
+                        
+                        <div class="skill-card glass hover-lift">
+                            <div class="skill-icon">
+                                <i class="fab fa-docker" style="color: #2496ED"></i>
+                            </div>
+                            <h4>Docker</h4>
+                            <div class="progress-bar" data-progress="70">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <span class="progress-text">70%</span>
+                        </div>
+                        
+                        <div class="skill-card glass hover-lift">
+                            <div class="skill-icon">
+                                <i class="fas fa-network-wired" style="color: #00E5FF"></i>
+                            </div>
+                            <h4>Networking</h4>
+                            <div class="progress-bar" data-progress="85">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <span class="progress-text">85%</span>
+                        </div>
+                        
+                        <div class="skill-card glass hover-lift">
+                            <div class="skill-icon">
+                                <i class="fas fa-microchip" style="color: #14F195"></i>
+                            </div>
+                            <h4>Hardware</h4>
+                            <div class="progress-bar" data-progress="90">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <span class="progress-text">90%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section section" id="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Projects</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Showcasing my latest work and achievements</p>
+            </div>
+            
+            <!-- Project Filters -->
+            <div class="project-filters" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="blockchain">Blockchain</button>
+                <button class="filter-btn" data-filter="networking">Networking</button>
+                <button class="filter-btn" data-filter="ai">AI</button>
+            </div>
+            
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass" data-category="web" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="images/DSCF0069.JPG" alt="E-commerce Website" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Bikashkc613" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://e-commerce-website-by-bikash-k-q4q5r1pe7-kcbikas-projects.vercel.app" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce Website</h3>
+                        <p>A fully responsive e-commerce website built with HTML, CSS, and JavaScript featuring product catalog, shopping cart, and checkout functionality.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card glass" data-category="web" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="Business Landing Page" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Bikashkc613" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Business Landing Page</h3>
+                        <p>A sleek, single-page website for a corporate client to generate leads with modern design and smooth animations.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">Flexbox</span>
+                            <span class="tag">Grid</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card glass" data-category="web" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop" alt="Analytics Dashboard" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Bikashkc613" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Analytics Dashboard UI</h3>
+                        <p>A data visualization dashboard UI created with CSS Grid featuring charts, graphs, and real-time data display.</p>
+                        <div class="project-tags">
+                            <span class="tag">CSS Grid</span>
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">Charts</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card glass" data-category="blockchain" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=600&fit=crop" alt="Blockchain DApp" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Bikashkc613" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Decentralized Application</h3>
+                        <p>A blockchain-based decentralized application with smart contracts for secure transactions and data management.</p>
+                        <div class="project-tags">
+                            <span class="tag">Blockchain</span>
+                            <span class="tag">Solidity</span>
+                            <span class="tag">Web3</span>
+                            <span class="tag">Ethereum</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card glass" data-category="networking" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop" alt="Network Infrastructure" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Bikashkc613" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Network Infrastructure Setup</h3>
+                        <p>Complete network infrastructure design and implementation for small to medium enterprises with security protocols.</p>
+                        <div class="project-tags">
+                            <span class="tag">Networking</span>
+                            <span class="tag">Security</span>
+                            <span class="tag">Hardware</span>
+                            <span class="tag">Router Config</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card glass" data-category="ai" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop" alt="AI Chatbot" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Bikashkc613" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Chatbot Assistant</h3>
+                        <p>An intelligent chatbot using machine learning and natural language processing for customer support automation.</p>
+                        <div class="project-tags">
+                            <span class="tag">AI</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">NLP</span>
+                            <span class="tag">ML</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience-section section" id="experience">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Career Journey</span>
+                <h2 class="section-title">Work Experience</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">My professional journey and achievements</p>
+            </div>
+            
+            <div class="timeline">
+                <!-- Experience 1 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <span class="timeline-date">2022 - Present</span>
+                        <h3>Computer Hardware & Network Trainer</h3>
+                        <h4>Professional Training Institute</h4>
+                        <p>Training students in computer hardware, networking fundamentals, and IT infrastructure. Successfully trained over 100+ students with 95% placement rate.</p>
+                        <ul class="achievement-list">
+                            <li>Developed comprehensive training curriculum for hardware and networking</li>
+                            <li>Conducted hands-on lab sessions and practical workshops</li>
+                            <li>Mentored students for industry certifications</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Experience 2 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <span class="timeline-date">2021 - 2022</span>
+                        <h3>Full Stack Developer</h3>
+                        <h4>Tech Solutions Pvt. Ltd.</h4>
+                        <p>Developed and maintained web applications using modern technologies. Led a team of junior developers and delivered multiple successful projects.</p>
+                        <ul class="achievement-list">
+                            <li>Built 10+ responsive web applications using React and Node.js</li>
+                            <li>Improved application performance by 40% through optimization</li>
+                            <li>Mentored junior developers and conducted code reviews</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Experience 3 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <span class="timeline-date">2020 - 2021</span>
+                        <h3>Blockchain Developer Intern</h3>
+                        <h4>Crypto Innovations</h4>
+                        <p>Worked on blockchain projects and smart contract development. Gained hands-on experience with Ethereum and Solidity.</p>
+                        <ul class="achievement-list">
+                            <li>Developed smart contracts for decentralized applications</li>
+                            <li>Participated in blockchain security audits</li>
+                            <li>Contributed to open-source blockchain projects</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Experience 4 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <span class="timeline-date">2019 - 2020</span>
+                        <h3>Junior Web Developer</h3>
+                        <h4>Digital Agency Nepal</h4>
+                        <p>Started my professional journey building responsive websites and learning modern web development practices.</p>
+                        <ul class="achievement-list">
+                            <li>Created 15+ client websites with HTML, CSS, and JavaScript</li>
+                            <li>Learned version control with Git and GitHub</li>
+                            <li>Collaborated with design team for UI/UX implementation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education-section section" id="education">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Academic Background</span>
+                <h2 class="section-title">Education</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">My academic qualifications and achievements</p>
+            </div>
+            
+            <div class="timeline">
+                <!-- Education 1 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <span class="timeline-date">2023 - Present</span>
+                        <h3>Bachelor of Computer Application (BCA)</h3>
+                        <h4>Tribhuvan University, Nepal</h4>
+                        <p>Currently pursuing bachelor's degree in Computer Application with focus on software development, database management, and system analysis.</p>
+                        <ul class="achievement-list">
+                            <li>CGPA: 3.6/4.0</li>
+                            <li>Focus: Software Engineering, Database Systems, Web Technologies</li>
+                            <li>Active member of Computer Science Club</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Education 2 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <span class="timeline-date">2019 - 2022</span>
+                        <h3>Diploma in Computer Engineering</h3>
+                        <h4>Shree Shanti Higher Secondary School, Bangi-5, Arghakhanchi</h4>
+                        <p>Completed a Diploma in Computer Engineering with a strong foundation in programming, computer hardware, networking, and database management. Gained practical experience through projects and lab work, enhancing technical and problem-solving skills.</p>
+                        <ul class="achievement-list">
+                            <li>Grade: First Division with Distinction</li>
+                            <li>Major Projects: E-commerce Website, Network Setup, Database Management System</li>
+                            <li>Hands-on experience with hardware assembly and troubleshooting</li>
+                            <li>Completed 6-month industry internship</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                
+               
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="certificates-section section" id="certificates">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Achievements</span>
+                <h2 class="section-title">Certificates & Awards</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Professional certifications and recognitions</p>
+            </div>
+            
+            <div class="certificates-grid">
+                <!-- Certificate 1 -->
+                <div class="certificate-card glass hover-lift" data-aos="fade-up" data-aos-delay="100">
+                    <div class="certificate-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1522125670776-3c7abb882bc2?w=600&h=400&fit=crop" alt="Web Development Certificate" class="certificate-image" loading="lazy">
+                        <div class="certificate-overlay">
+                            <h4>Full Stack Web Development</h4>
+                            <p>Udemy - 2023</p>
+                            <button class="btn btn-primary btn-sm view-certificate">
+                                <i class="fas fa-eye"></i> View
+                            </button>
+                        </div>
+                    </div>
+                    <div class="certificate-content">
+                        <h4>Full Stack Web Development</h4>
+                        <p>Udemy Online Course</p>
+                        <span class="certificate-date">2023</span>
+                    </div>
+                </div>
+                
+                <!-- Certificate 2 -->
+                <div class="certificate-card glass hover-lift" data-aos="fade-up" data-aos-delay="200">
+                    <div class="certificate-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop" alt="Blockchain Certificate" class="certificate-image" loading="lazy">
+                        <div class="certificate-overlay">
+                            <h4>Blockchain Fundamentals</h4>
+                            <p>Coursera - 2022</p>
+                            <button class="btn btn-primary btn-sm view-certificate">
+                                <i class="fas fa-eye"></i> View
+                            </button>
+                        </div>
+                    </div>
+                    <div class="certificate-content">
+                        <h4>Blockchain Fundamentals</h4>
+                        <p>Coursera Certification</p>
+                        <span class="certificate-date">2022</span>
+                    </div>
+                </div>
+                
+                <!-- Certificate 3 -->
+                <div class="certificate-card glass hover-lift" data-aos="fade-up" data-aos-delay="300">
+                    <div class="certificate-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop" alt="Networking Certificate" class="certificate-image" loading="lazy">
+                        <div class="certificate-overlay">
+                            <h4>Computer Networking</h4>
+                            <p>Cisco - 2022</p>
+                            <button class="btn btn-primary btn-sm view-certificate">
+                                <i class="fas fa-eye"></i> View
+                            </button>
+                        </div>
+                    </div>
+                    <div class="certificate-content">
+                        <h4>CCNA - Computer Networking</h4>
+                        <p>Cisco Networking Academy</p>
+                        <span class="certificate-date">2022</span>
+                    </div>
+                </div>
+                
+                <!-- Certificate 4 -->
+                <div class="certificate-card glass hover-lift" data-aos="fade-up" data-aos-delay="100">
+                    <div class="certificate-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop" alt="AI Certificate" class="certificate-image" loading="lazy">
+                        <div class="certificate-overlay">
+                            <h4>AI & Machine Learning</h4>
+                            <p>Google - 2023</p>
+                            <button class="btn btn-primary btn-sm view-certificate">
+                                <i class="fas fa-eye"></i> View
+                            </button>
+                        </div>
+                    </div>
+                    <div class="certificate-content">
+                        <h4>AI & Machine Learning</h4>
+                        <p>Google AI Certification</p>
+                        <span class="certificate-date">2023</span>
+                    </div>
+                </div>
+                
+                <!-- Certificate 5 -->
+                <div class="certificate-card glass hover-lift" data-aos="fade-up" data-aos-delay="200">
+                    <div class="certificate-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop" alt="React Certificate" class="certificate-image" loading="lazy">
+                        <div class="certificate-overlay">
+                            <h4>React JS Development</h4>
+                            <p>Meta - 2023</p>
+                            <button class="btn btn-primary btn-sm view-certificate">
+                                <i class="fas fa-eye"></i> View
+                            </button>
+                        </div>
+                    </div>
+                    <div class="certificate-content">
+                        <h4>React JS Development</h4>
+                        <p>Meta Front-End Developer</p>
+                        <span class="certificate-date">2023</span>
+                    </div>
+                </div>
+                
+                <!-- Certificate 6 -->
+                <div class="certificate-card glass hover-lift" data-aos="fade-up" data-aos-delay="300">
+                    <div class="certificate-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop" alt="Database Certificate" class="certificate-image" loading="lazy">
+                        <div class="certificate-overlay">
+                            <h4>Database Management</h4>
+                            <p>Oracle - 2022</p>
+                            <button class="btn btn-primary btn-sm view-certificate">
+                                <i class="fas fa-eye"></i> View
+                            </button>
+                        </div>
+                    </div>
+                    <div class="certificate-content">
+                        <h4>Database Management</h4>
+                        <p>Oracle Database Administrator</p>
+                        <span class="certificate-date">2022</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="resume-section section" id="resume">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Documents</span>
+                <h2 class="section-title">Resume & CV</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Download my professional documents and templates</p>
+            </div>
+            
+            <!-- Auto-generated download cards appear here -->
+            <div id="auto-downloads-grid" class="resume-grid-4">
+                <!-- Cards are automatically generated from js/auto-downloads.js -->
+                <!-- Any file you add to the configuration will appear here -->
+            </div>
+            
+            <!-- Optional: Additional Info -->
+            <div class="resume-note" data-aos="fade-up" data-aos-delay="500">
+                <p><i class="fas fa-info-circle"></i> All documents are professionally formatted and ready to use. Templates are fully editable.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section section" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">What I Offer</span>
+                <h2 class="section-title">Services</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Professional services I provide</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card glass" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Full-stack web development using modern technologies like React, Node.js, and databases. Building responsive, fast, and SEO-optimized websites and web applications.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Responsive Design</li>
+                        <li><i class="fas fa-check"></i> Modern Frameworks</li>
+                        <li><i class="fas fa-check"></i> Performance Optimization</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card glass" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>Blockchain Development</h3>
+                    <p>Development of decentralized applications (DApps) and smart contracts on various blockchain platforms. Expertise in Ethereum, Solidity, and Web3 technologies.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Smart Contracts</li>
+                        <li><i class="fas fa-check"></i> DApp Development</li>
+                        <li><i class="fas fa-check"></i> Blockchain Integration</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card glass" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Computer Networking</h3>
+                    <p>Network infrastructure setup, configuration, and maintenance. Expertise in router configuration, network security, and troubleshooting for businesses.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Network Setup</li>
+                        <li><i class="fas fa-check"></i> Security Configuration</li>
+                        <li><i class="fas fa-check"></i> Troubleshooting</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card glass" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Computer Training</h3>
+                    <p>Professional training in computer hardware, networking, and software development. Hands-on practical sessions with industry-relevant curriculum.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Hardware Training</li>
+                        <li><i class="fas fa-check"></i> Networking Courses</li>
+                        <li><i class="fas fa-check"></i> Programming Classes</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card glass" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Solutions</h3>
+                    <p>Implementation of artificial intelligence and machine learning solutions for automation, data analysis, and intelligent systems development.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> ML Model Development</li>
+                        <li><i class="fas fa-check"></i> AI Integration</li>
+                        <li><i class="fas fa-check"></i> Data Analysis</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card glass" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Technical Consultation</h3>
+                    <p>Expert consultation for technology decisions, system architecture, and digital transformation. Helping businesses choose the right technology stack.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Tech Stack Selection</li>
+                        <li><i class="fas fa-check"></i> System Architecture</li>
+                        <li><i class="fas fa-check"></i> Best Practices</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section section" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Let's discuss your project and bring your ideas to life</p>
+            </div>
+            
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item glass">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Email</h4>
+                        <a href="mailto:kcbikash200030004000@gmail.com">kcbikash200030004000@gmail.com</a>
+                    </div>
+                    
+                    <div class="contact-item glass">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4>Phone</h4>
+                        <a href="tel:+9779761550629">+977 9761550629</a>
+                    </div>
+                    
+                    <div class="contact-item glass">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Location</h4>
+                        <p>Sandhikharka-9, Arghakhanchi<br>Nepal</p>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <h4>Follow Me</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/Bikashkc613" target="_blank" class="social-icon hover-glow">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/bikash-kc-567a742a0/" target="_blank" class="social-icon hover-glow">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.facebook.com/bikash.kc.453310/" target="_blank" class="social-icon hover-glow">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" class="social-icon hover-glow">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" class="social-icon hover-glow">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <form class="contact-form glass" data-aos="fade-left">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="tel" placeholder="Your Phone">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                            <i class="fas fa-tag"></i>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="6" placeholder="Your Message" required></textarea>
+                        <i class="fas fa-comment"></i>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit btn-ripple">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Send Message</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="gradient-text">Bijay KC</h3>
+                    <p>Computer Engineer & Full Stack Developer</p>
+                    <p>Passionate about creating innovative solutions through code, blockchain technology, and artificial intelligence.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#services">Blockchain</a></li>
+                        <li><a href="#services">Networking</a></li>
+                        <li><a href="#services">Training</a></li>
+                        <li><a href="#services">AI Solutions</a></li>
+                        <li><a href="#services">Consultation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Me</h4>
+                    <div class="footer-social">
+                        <a href="https://github.com/Bikashkc613" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/bikash-kc-567a742a0/" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.facebook.com/bikash.kc.453310/" target="_blank" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="social-icon">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bijay KC. All Rights Reserved. | Built with <i class="fas fa-heart"></i> and passion</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/auto-downloads.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
